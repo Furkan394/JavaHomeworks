@@ -1,6 +1,6 @@
 package Abstract;
 
-import Entities.Customer;
+import entities.Customer;
 
 public interface CustomerService {
 	void save(Customer customer);

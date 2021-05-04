@@ -1,4 +1,6 @@
-package Entities;
+package entities;
+
+import java.util.Date;
 
 import Abstract.Entity;
 
@@ -6,14 +8,15 @@ public class Customer implements Entity{
 	private int id;
 	private String firstName;
 	private String lastName;
-	private String dateOfBirth;
+	private Date dateOfBirth;
 	private String nationalityId;
 	
 	public Customer() {
 		
 	}
 	
-	public Customer(int id, String firstName, String lastName, String dateOfBirth , String nationalityId) {
+	public Customer(int id, String firstName, String lastName, Date dateOfBirth , String nationalityId) {
+		super();
 		this.id = id;
 		this.firstName = firstName;
 		this.lastName = lastName;
@@ -45,11 +48,11 @@ public class Customer implements Entity{
 		this.lastName = lastName;
 	}
 
-	public String getDateOfBirth() {
+	public Date getDateOfBirth() {
 		return dateOfBirth;
 	}
 
-	public void setDateOfBirth(String dateOfBirth) {
+	public void setDateOfBirth(Date dateOfBirth) {
 		this.dateOfBirth = dateOfBirth;
 	}
 

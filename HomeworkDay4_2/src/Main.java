@@ -1,7 +1,9 @@
+import java.util.Date;
+
 import Abstract.BaseCustomerManager;
-import Adaptors.MernisServiceAdapter;
-import Concrete.StarbucksCustomerManager;
-import Entities.Customer;
+import adapters.MernisServiceAdapter;
+import concrete.StarbucksCustomerManager;
+import entities.Customer;
 
 public class Main {
 
@@ -11,8 +13,8 @@ public class Main {
 		customer.setId(1);
 		customer.setFirstName("Furkan Emre");
 		customer.setLastName("Çakýroðlu");
-		customer.setDateOfBirth("2000,12,12");
-		customer.setNationalityId("12345678910");
+		customer.setDateOfBirth(new Date(2001, 01, 01));
+		customer.setNationalityId("33257363710");
 		
 		BaseCustomerManager customerManager = new StarbucksCustomerManager(new MernisServiceAdapter());
 		customerManager.save(customer);

@@ -1,6 +1,6 @@
 package Abstract;
 
-import Entities.Customer;
+import entities.Customer;
 
 public abstract class BaseCustomerManager implements CustomerService{
 

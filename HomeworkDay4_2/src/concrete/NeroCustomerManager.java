@@ -1,8 +1,8 @@
-package Concrete;
+package concrete;
 
 import Abstract.BaseCustomerManager;
 import Abstract.CustomerCheckService;
-import Entities.Customer;
+import entities.Customer;
 
 public class NeroCustomerManager extends BaseCustomerManager{
 	CustomerCheckService checkService;
