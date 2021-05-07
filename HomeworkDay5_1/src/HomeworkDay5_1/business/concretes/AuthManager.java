@@ -117,8 +117,7 @@ public class AuthManager implements AuthService{
 		} else if (loginUser.getPassword() != password) {
 			System.out.println("You entered an incorrect password.");
 		}
-		System.out.println(
-					"You have successfully logged into the system: " + loginUser.getFirstName() + " " + loginUser.getLastName());
+		System.out.println("You have successfully logged into the system: " + loginUser.getFirstName() + " " + loginUser.getLastName());
 			
 	}
 
